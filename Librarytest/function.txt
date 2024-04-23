@@ -1,0 +1,22 @@
+double density = 1;
+double max_radius = 6.5;
+int c = 1;
+
+double points = 96 * density;
+
+for (int i = 0; i < points; i++)
+{
+    double angle = (i * Math.PI) / (16 * density);
+
+    double radius = max_radius * ((104 * density) - i ) / (104 * density);
+
+    double x = radius * Math.Cos(angle);
+    double y = radius * Math.Sin(angle);
+
+    System.Console.WriteLine("X Value: " + x + ", Y Value: " + y);
+
+    System.Console.WriteLine("X Flipped: " + -x + ", Y Flipped: " + -y);
+
+    Random rand = new();
+    System.Console.WriteLine(rand.Next(1, 3));
+}

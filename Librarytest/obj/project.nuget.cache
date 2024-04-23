@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kFqdsxrsVPbIvAt7M2U6FXI0Vnv9vNgIod015o5aaubDu38VkOLxpjEAplEaYevlsvgcCVrKnS9X3foQv/LArA==",
+  "success": true,
+  "projectFilePath": "/home/shuv/ProgrammingProjects/CSharpUwU/LibraryTest/Librarytest/Librarytest.csproj",
+  "expectedPackageFiles": [
+    "/home/shuv/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

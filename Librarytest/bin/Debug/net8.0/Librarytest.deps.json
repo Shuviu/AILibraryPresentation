@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Librarytest/1.0.0": {
+        "dependencies": {
+          "AILibrary": "1.0.0"
+        },
+        "runtime": {
+          "Librarytest.dll": {}
+        }
+      },
+      "AILibrary/1.0.0": {
+        "runtime": {
+          "AILibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Librarytest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AILibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
