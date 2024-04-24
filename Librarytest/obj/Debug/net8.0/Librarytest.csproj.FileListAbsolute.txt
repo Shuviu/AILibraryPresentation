@@ -16,3 +16,4 @@
 /home/shuv/ProgrammingProjects/CSharpUwU/LibraryTest/Librarytest/bin/Debug/net8.0/AILibrary.pdb
 /home/shuv/ProgrammingProjects/CSharpUwU/LibraryTest/Librarytest/obj/Debug/net8.0/Librarytest.csproj.AssemblyReference.cache
 /home/shuv/ProgrammingProjects/CSharpUwU/LibraryTest/Librarytest/obj/Debug/net8.0/Librarytest.csproj.CopyComplete
+/home/shuv/ProgrammingProjects/CSharpUwU/LibraryTest/Librarytest/obj/Debug/net8.0/Librarytest.sourcelink.json

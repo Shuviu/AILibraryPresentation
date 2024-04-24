@@ -1,18 +1,24 @@
 ﻿using AILibrary;
 
-SpiralDatasetGen spiralDatasetGen = new SpiralDatasetGen(1, 6.5);
-spiralDatasetGen.GenerateSamples();
+SpiralDatasetGen spiralDatasetGen = new SpiralDatasetGen(1, 0.5);
+spiralDatasetGen.GenerateSamples(2);
 
 Dataset dataset = new Dataset(spiralDatasetGen.GetSamples(), spiralDatasetGen.GetLabels());
 
-IOptimizer optimizer = new SGDOptim(0.01);
+IOptimizer optimizer = new SGDOptim(0.1);
 ILossFunction lossFunction = new CategoricalCrossEntropyLoss();
 
 Trainer trainer = new Trainer(lossFunction, optimizer);
 trainer.UpdateDataset(dataset);
 
-trainer.AddNeuronLayer(2, 4);
-trainer.AddNeuronLayer(4, 4);
-trainer.AddNeuronLayer(4, 2);
+trainer.AddNeuronLayer(new NeuronLayer(2, 16));
+trainer.AddNeuronLayer(new SigmoidActivation());
+trainer.AddNeuronLayer(new NeuronLayer(16, 16));
+trainer.AddNeuronLayer(new SigmoidActivation());
+trainer.AddNeuronLayer(new NeuronLayer(16, 16));
+trainer.AddNeuronLayer(new ReLUActivation());
+trainer.AddNeuronLayer(new NeuronLayer(16, 16));
+trainer.AddNeuronLayer(new SigmoidActivation());
+trainer.AddNeuronLayer(new NeuronLayer(16, 2));
 
-trainer.Train(4000);
+trainer.Train(40);
